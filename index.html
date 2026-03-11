@@ -1,1 +1,77 @@
+<!DOCTYPE html>
+<html lang="ja">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>English Practice</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
 
+<header>
+<h1>English Practice</h1>
+</header>
+
+<main>
+
+<div id="startScreen">
+
+<h2>出題モード</h2>
+
+<select id="unitSelect">
+<option value="all">すべての単元</option>
+</select>
+
+<div class="modeButtons">
+<button id="startNormal">順番</button>
+<button id="startRandom">ランダム</button>
+</div>
+
+</div>
+
+<div id="quizScreen" class="hidden">
+
+<p id="progress"></p>
+
+<div id="questionArea">
+<p id="questionText"></p>
+</div>
+
+<div id="choiceArea"></div>
+
+<div id="translateArea" class="hidden">
+<input type="text" id="translateInput">
+<button id="submitTranslate">Submit</button>
+</div>
+
+<div id="reorderArea" class="hidden">
+<div id="wordPool"></div>
+<div id="answerPool"></div>
+<button id="submitReorder">Submit</button>
+</div>
+
+<p id="result"></p>
+
+<button id="nextBtn" class="hidden">Next</button>
+
+</div>
+
+<div id="resultScreen" class="hidden">
+
+<h2>終了</h2>
+
+<p id="score"></p>
+
+<h3>間違えた問題</h3>
+<ul id="wrongList"></ul>
+
+<button onclick="location.reload()">もう一度</button>
+
+</div>
+
+</main>
+
+<script src="script.js"></script>
+
+</body>
+</html>
